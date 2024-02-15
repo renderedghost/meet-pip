@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Meet PiP Toggle",
+    "version": "1.0",
+    "description": "Adds a toggle button for PiP mode to Google Meet.",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://meet.google.com/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}
